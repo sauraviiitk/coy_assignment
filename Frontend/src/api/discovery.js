@@ -1,5 +1,10 @@
+const defaultApiBaseUrl = import.meta.env.DEV
+  ? '/api'
+  : 'https://coy-assignment.onrender.com';
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || defaultApiBaseUrl).replace(/\/+$/, '');
+
 async function request(path, options) {
-  const response = await fetch(`/api${path}`, {
+  const response = await fetch(`${apiBaseUrl}${path}`, {
     headers: { 'Content-Type': 'application/json' },
     ...options
   });

@@ -19,6 +19,21 @@ There is no authentication. `CURRENT_USER_ID` identifies the single demo user.
 - Backend: Node.js, Express, `pg`.
 - Database: PostgreSQL.
 
+## Project layout
+
+```text
+Backend/
+  Data/profile.json    Mock profile seed data
+  routes/              Feed, swipe, and matches endpoints
+  database.js          PostgreSQL schema setup and seeding
+  server.js            Express application and startup
+  test/                API behavior tests
+Frontend/
+  src/api/              Frontend API client
+  src/components/       Discover, profile, and match screens
+  src/App.jsx           Application state and screen flow
+```
+
 ## Requirements
 
 - Node.js 20 or newer.
@@ -95,7 +110,7 @@ Returns an API health response:
 Returns a JSON array of profiles the configured user has not swiped on. The logged-in user's own profile is excluded. Each profile includes its seeded profile fields, such as `id`, `name`, `age`, `photos`, `bio`, `location`, and `interests`.
 
 ```bash
-curl http://localhost:4000/feed
+curl.exe http://localhost:4000/feed
 ```
 
 The number of profiles in the feed decreases as the user swipes. Refreshing or reloading does not reset saved swipes.
@@ -126,8 +141,8 @@ Request:
 
 If there is no reciprocal like, `matchCreated` is `false` and `match` is `null`. The matched profile is returned only when both likes exist.
 
-```bash
-curl -X POST http://localhost:4000/swipe `
+```powershell
+curl.exe -X POST http://localhost:4000/swipe `
   -H "Content-Type: application/json" `
   -d '{ "profileId": "meera", "action": "like" }'
 ```
@@ -137,7 +152,7 @@ curl -X POST http://localhost:4000/swipe `
 Returns a JSON array containing only mutual matches. Incoming likes that are not mutual are never listed or marked in feed responses.
 
 ```bash
-curl http://localhost:4000/matches
+curl.exe http://localhost:4000/matches
 ```
 
 ### Error responses
@@ -157,7 +172,7 @@ curl http://localhost:4000/matches
 - `GET /feed` excludes profiles with an existing swipe from the current user.
 - `GET /matches` and the match response from `POST /swipe` require a reciprocal like.
 - There is no endpoint for listing incoming likes. Do not add a `likedYou` field or equivalent to feed responses.
-- Demo liker configuration is mock data. Do not use real identities or secrets in public seed files.
+- The app/API does not reveal non-mutual likes. However, the demo seed configuration is in the public source, so repository readers can inspect which mock profiles are seeded as likers. Do not put real user data in the seed or source code.
 
 ## Tests and production build
 
@@ -175,7 +190,7 @@ cd Frontend
 npm run build
 ```
 
-The production frontend expects `/api` to be routed to the Express API by the hosting platform or reverse proxy. The Vite proxy is for local development.
+In local development, the Vite proxy routes `/api/*` to `http://localhost:4000`. Production builds call `https://coy-assignment.onrender.com` by default. Set `VITE_API_BASE_URL` before building to use another API origin. Configure the backend's `FRONTEND_ORIGIN` to match the deployed frontend origin so browser CORS requests are allowed.
 
 ## Troubleshooting
 
