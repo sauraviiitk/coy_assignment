@@ -64,7 +64,8 @@ Available variables:
 | `DATABASE_URL` | Yes | - | PostgreSQL connection URI. |
 | `PORT` | No | `4000` | Express API port. |
 | `CURRENT_USER_ID` | No | `kabir` | ID of the logged-in demo profile. Must exist in `Data/profile.json`. |
-| `FRONTEND_ORIGIN` | No | `http://localhost:3000` | Browser origin allowed by the API's CORS configuration. |
+| `FRONTEND_ORIGINS` | No | Localhost and the deployed Vercel app | Comma-separated browser origins allowed by CORS. |
+| `FRONTEND_ORIGIN` | No | - | Legacy single-origin setting; accepted in addition to `FRONTEND_ORIGINS`. |
 | `SEED_LIKER_IDS` | No | Demo defaults | Comma-separated profile IDs to seed as having liked the demo user. Each ID must exist in `Data/profile.json` and must not equal `CURRENT_USER_ID`. |
 
 ### 2. Install and start the backend

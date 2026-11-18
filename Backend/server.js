@@ -14,9 +14,18 @@ const CURRENT_USER_ID = process.env.CURRENT_USER_ID || 'kabir';
 
 function createApp(pool, currentUserId = CURRENT_USER_ID) {
   const app = express();
-  const allowedOrigin = process.env.FRONTEND_ORIGIN || 'http://localhost:3000';
+  const allowedOrigins = new Set([
+    'http://localhost:3000',
+    'https://coy-assignment-ten.vercel.app',
+    ...(process.env.FRONTEND_ORIGIN || '').split(','),
+    ...(process.env.FRONTEND_ORIGINS || '').split(',')
+  ].map((origin) => origin.trim()).filter(Boolean));
 
-  app.use(cors({ origin: allowedOrigin }));
+  app.use(cors({
+    origin(origin, callback) {
+      callback(null, !origin || allowedOrigins.has(origin));
+    }
+  }));
   app.use(express.json({ limit: '16kb' }));
 
   app.get('/health', (_req, res) => res.json({ status: 'ok' }));

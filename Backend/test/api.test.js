@@ -110,6 +110,24 @@ test('feed omits swiped profiles and does not expose incoming likes', async () =
   });
 });
 
+test('CORS preflight allows the deployed Vercel frontend', async () => {
+  const origin = 'https://coy-assignment-ten.vercel.app';
+
+  await withServer(createTestPool(), async (baseUrl) => {
+    const response = await fetch(`${baseUrl}/feed`, {
+      method: 'OPTIONS',
+      headers: {
+        Origin: origin,
+        'Access-Control-Request-Method': 'GET',
+        'Access-Control-Request-Headers': 'content-type'
+      }
+    });
+
+    assert.equal(response.status, 204);
+    assert.equal(response.headers.get('access-control-allow-origin'), origin);
+  });
+});
+
 test('a like only creates and lists a match when the other profile liked back', async () => {
   const pool = createTestPool([
     { swiperId: 'meera', targetId: currentUserId, action: 'like' }
