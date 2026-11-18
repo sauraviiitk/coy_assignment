@@ -87,5 +87,50 @@ export const PROFILES_DATA = [
       "📸 Loved your perspective! Which lens do you shoot with?",
       "☕ Best rooftop chai spot recommendation?"
     ]
+  },
+  {
+    "id": "tejas",
+    "name": "Tejas",
+    "age": 26,
+    "location": "Goa, India",
+    "distance": "9.5 km away",
+    "status": "Verified",
+    "activeNow": false,
+    "bio": "Musician playing sunset sets at shacks. Susegad over hustle. 🌴🎷",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/37.jpg",
+      "https://randomuser.me/api/portraits/men/38.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Cycling",
+        "icon": "🚴",
+        "bg": "bg-[#D8F3E4]"
+      }
+    ],
+    "secretHint": "You both love Palolem at sunset!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Currently playing 🎷",
+        "answer": "Smooth jazz covers with a Konkani twist.",
+        "icon": "music_note",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎷 Play me your favourite song?",
+      "🌴 Palolem or Agonda?"
+    ]
   }
 ];

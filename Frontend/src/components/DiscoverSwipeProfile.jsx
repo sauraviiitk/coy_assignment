@@ -1,44 +1,94 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export default function DiscoverSwipeProfile({
   profile,
   onLike,
   onPass,
-  onSuperlike,
   onViewDetails,
+  onViewMatches,
   onFilterClick,
-  nearbyCount = 12
+  nearbyCount = 0,
+  matchCount = 0
 }) {
   const [stamp, setStamp] = useState(null); // 'like', 'pass', 'super'
   const [cardTransform, setCardTransform] = useState('');
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const pointerStart = useRef(null);
+  const isAnimating = useRef(false);
+  const ignoreNextClick = useRef(false);
+
+  useEffect(() => {
+    setPhotoIndex(0);
+  }, [profile?.id]);
 
   if (!profile) return null;
 
-  const handleAction = (type) => {
+  const finishSwipe = (type, offset = 0) => {
+    if (isAnimating.current) return;
+    isAnimating.current = true;
+    setIsDragging(false);
     setStamp(type);
-    if (type === 'like') {
-      setCardTransform('rotate(6deg) translate(24px, -10px)');
-      setTimeout(() => {
-        setStamp(null);
-        setCardTransform('');
-        onLike && onLike(profile);
-      }, 550);
-    } else if (type === 'pass') {
-      setCardTransform('rotate(-6deg) translate(-24px, -10px)');
-      setTimeout(() => {
-        setStamp(null);
-        setCardTransform('');
-        onPass && onPass(profile);
-      }, 550);
-    } else if (type === 'super') {
-      setCardTransform('translateY(-20px) scale(1.03)');
-      setTimeout(() => {
-        setStamp(null);
-        setCardTransform('');
-        onSuperlike && onSuperlike(profile);
-      }, 550);
+    const direction = type === 'like' ? 1 : -1;
+    const startOffset = offset || direction * 24;
+    const endOffset = direction * Math.max(420, Math.abs(startOffset) + 280);
+    setCardTransform(`translate(${endOffset}px, -20px) rotate(${direction * 12}deg)`);
+    window.setTimeout(() => {
+      setStamp(null);
+      setCardTransform('');
+      setIsDragging(false);
+      isAnimating.current = false;
+      (type === 'like' ? onLike : onPass)?.(profile);
+    }, 320);
+  };
+
+  const handlePointerDown = (event) => {
+    if (event.button !== undefined && event.button !== 0) return;
+    pointerStart.current = { x: event.clientX, y: event.clientY };
+  };
+
+  const handlePointerMove = (event) => {
+    if (!pointerStart.current || isAnimating.current) return;
+    const offset = event.clientX - pointerStart.current.x;
+    if (Math.abs(offset) < 6) return;
+    if (!isDragging) {
+      event.currentTarget.setPointerCapture?.(event.pointerId);
+      setIsDragging(true);
     }
+    setCardTransform(`translate(${offset}px, 0) rotate(${offset * 0.04}deg)`);
+    setStamp(offset > 35 ? 'like' : offset < -35 ? 'pass' : null);
+  };
+
+  const handlePointerUp = (event) => {
+    if (!pointerStart.current) return;
+    const offset = event.clientX - pointerStart.current.x;
+    pointerStart.current = null;
+    if (Math.abs(offset) >= 100) {
+      ignoreNextClick.current = true;
+      window.setTimeout(() => {
+        ignoreNextClick.current = false;
+      }, 0);
+      finishSwipe(offset > 0 ? 'like' : 'pass', offset);
+    } else {
+      setCardTransform('');
+      setStamp(null);
+      setIsDragging(false);
+    }
+  };
+
+  const handlePointerCancel = () => {
+    pointerStart.current = null;
+    setCardTransform('');
+    setStamp(null);
+    setIsDragging(false);
+  };
+
+  const handleCardClick = () => {
+    if (ignoreNextClick.current || isAnimating.current) {
+      ignoreNextClick.current = false;
+      return;
+    }
+    onViewDetails?.();
   };
 
   const handlePhotoCycle = (e) => {
@@ -49,7 +99,7 @@ export default function DiscoverSwipeProfile({
   };
 
   return (
-    <div className="flex flex-col w-full pb-6 space-y-4">
+    <div className="flex flex-col w-full pb-36 space-y-4">
       {/* Discover Section Header */}
       <div className="flex flex-col gap-2 pt-1">
         <div className="flex items-center justify-between">
@@ -60,17 +110,31 @@ export default function DiscoverSwipeProfile({
             <p className="font-body-sm text-body-sm text-[#817B8D]">
               Someone new might be closer than you think.
             </p>
+            <p className="font-label-sm text-label-sm text-[#817B8D]">
+              Swipe right to like or left to pass · {nearbyCount} {nearbyCount === 1 ? 'profile' : 'profiles'} left.
+            </p>
           </div>
 
           {/* Filter Button */}
-          <button 
-            aria-label="Filter preferences"
-            onClick={onFilterClick}
-            type="button"
-            className="w-11 h-11 rounded-full bg-white flex items-center justify-center text-[#19151F] shadow-[3px_3px_0px_#19151F] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-[#19151F]"
-          >
-            <span className="material-symbols-outlined text-[22px]">tune</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={onViewMatches}
+              aria-label={`View matches, ${matchCount}`}
+              className="h-11 px-3 rounded-full bg-white flex items-center gap-1.5 text-[#19151F] shadow-[3px_3px_0px_#19151F] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-[#19151F]"
+            >
+              <span className="material-symbols-outlined text-[20px]">favorite</span>
+              <span className="font-label-sm text-label-sm font-bold">{matchCount}</span>
+            </button>
+            <button
+              aria-label="Filter preferences"
+              onClick={onFilterClick}
+              type="button"
+              className="w-11 h-11 rounded-full bg-white flex items-center justify-center text-[#19151F] shadow-[3px_3px_0px_#19151F] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer border-2 border-[#19151F]"
+            >
+              <span className="material-symbols-outlined text-[22px]">tune</span>
+            </button>
+          </div>
         </div>
 
         {/* Micro Pill Sub-banner */}
@@ -88,9 +152,13 @@ export default function DiscoverSwipeProfile({
 
         {/* Active Card Surface */}
         <div 
-          onClick={onViewDetails}
+          onClick={handleCardClick}
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerCancel}
           style={{ transform: cardTransform }}
-          className="relative bg-white rounded-[24px] border-2 border-[#19151F] shadow-[4px_4px_0px_#19151F] overflow-hidden flex flex-col transition-transform duration-200 cursor-pointer"
+          className={`relative bg-white rounded-[24px] border-2 border-[#19151F] shadow-[4px_4px_0px_#19151F] overflow-hidden flex flex-col touch-pan-y ${isDragging ? 'transition-none' : 'transition-transform duration-300'} cursor-pointer`}
         >
           {/* Photo Container (65% visually weighted) */}
           <div className="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
@@ -119,8 +187,11 @@ export default function DiscoverSwipeProfile({
 
             {/* Overlay Top Right: Photo Counter */}
             {profile.photos && profile.photos.length > 1 && (
-              <div className="absolute top-3 right-3 z-20 bg-[#19151F]/70 backdrop-blur-md text-white px-2.5 py-0.5 rounded-full border border-white/30 text-label-sm font-label-sm">
-                {photoIndex + 1}/{profile.photos.length}
+              <div
+                aria-label={`Photo ${photoIndex + 1} of ${profile.photos.length}`}
+                className="absolute top-3 right-3 z-20 bg-[#19151F]/70 backdrop-blur-md text-white px-2.5 py-0.5 rounded-full border border-white/30 text-label-sm font-label-sm"
+              >
+                Photo {photoIndex + 1}/{profile.photos.length}
               </div>
             )}
 
@@ -139,14 +210,6 @@ export default function DiscoverSwipeProfile({
               }`}
             >
               PASS ✕
-            </div>
-
-            <div 
-              className={`absolute top-12 inset-x-0 mx-auto w-max border-4 border-amber-500 bg-white/95 text-amber-600 px-5 py-2 rounded-xl font-display-lg-mobile text-headline-sm uppercase font-extrabold tracking-wider shadow-[3px_3px_0px_#19151F] pointer-events-none transition-opacity duration-150 z-30 ${
-                stamp === 'super' ? 'opacity-100 scale-110' : 'opacity-0 scale-90'
-              }`}
-            >
-              SUPER ⭐
             </div>
 
             {/* Gradient Scrim with Location Info */}
@@ -212,13 +275,14 @@ export default function DiscoverSwipeProfile({
       </div>
 
       {/* Interactive Action Buttons */}
-      <div className="flex items-center justify-center gap-5 pt-2">
+      <div className="fixed bottom-28 left-0 right-0 z-40 mx-auto flex w-full max-w-[420px] items-center justify-center gap-5 px-margin">
         {/* Pass Button (Left) */}
         <button 
           id="btn-pass"
           type="button"
           aria-label="Pass on profile"
-          onClick={() => handleAction('pass')}
+          onClick={() => finishSwipe('pass')}
+          disabled={isAnimating.current}
           className="w-14 h-14 rounded-full bg-white border-2 border-[#19151F] text-[#19151F] flex items-center justify-center shadow-[3px_3px_0px_#19151F] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer hover:bg-gray-50"
         >
           <span className="material-symbols-outlined text-[28px] font-bold">close</span>
@@ -229,30 +293,15 @@ export default function DiscoverSwipeProfile({
           id="btn-like"
           type="button"
           aria-label="Like profile"
-          onClick={() => handleAction('like')}
+          onClick={() => finishSwipe('like')}
+          disabled={isAnimating.current}
           className="w-[68px] h-[68px] rounded-full bg-[#FF347D] border-2 border-[#19151F] text-white flex items-center justify-center shadow-[4px_4px_0px_#19151F] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all cursor-pointer hover:bg-[#e11568]"
         >
           <span className="material-symbols-outlined text-[34px] filled-icon">favorite</span>
         </button>
 
-        {/* Super Like Button (Right, Soft Lavender) */}
-        <button 
-          id="btn-superlike"
-          type="button"
-          aria-label="Superlike profile"
-          onClick={() => handleAction('super')}
-          className="w-14 h-14 rounded-full bg-[#E8E0FF] border-2 border-[#19151F] text-[#19151F] flex items-center justify-center shadow-[3px_3px_0px_#19151F] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer hover:bg-[#d8ccfa]"
-        >
-          <span className="material-symbols-outlined text-[26px] filled-icon">star</span>
-        </button>
       </div>
 
-      {/* Discovery Progress Count */}
-      <div className="flex items-center justify-center gap-1.5 pt-1 text-center">
-        <span className="text-label-sm font-label-sm text-[#817B8D] font-medium">
-          🔥 {nearbyCount} people nearby discoverable today
-        </span>
-      </div>
     </div>
   );
 }

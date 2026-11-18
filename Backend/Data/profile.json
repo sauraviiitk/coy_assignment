@@ -1,0 +1,1577 @@
+[
+  {
+    "id": "meera",
+    "name": "Meera",
+    "age": 23,
+    "location": "Jaipur, India",
+    "distance": "3.5 km away",
+    "status": "Recently joined",
+    "activeNow": false,
+    "bio": "Architecture enthusiast, sunset chaser, and analog camera collector. Always down for rooftop chai. 📷🌇",
+    "photos": [
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "interests": [
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Chai",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Design",
+        "icon": "📐",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both listen to Prateek Kuhad on repeat!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "A non-negotiable? 🌅",
+        "answer": "Watching the sky change colors during golden hour, preferably with a cup of adrak chai.",
+        "icon": "wb_twilight",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "📸 Loved your perspective! Which lens do you shoot with?",
+      "☕ Best rooftop chai spot recommendation?"
+    ]
+  },
+  {
+    "id": "ananya",
+    "name": "Ananya",
+    "age": 24,
+    "location": "Mumbai, India",
+    "distance": "2.4 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Marine Drive walks, indie playlists and a very questionable love for vada pav. 🌊🎧",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/5.jpg",
+      "https://randomuser.me/api/portraits/women/6.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      }
+    ],
+    "secretHint": "You both have a Prateek Kuhad concert on your bucket list!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Perfect Sunday? 🌧️",
+        "answer": "Rain outside, a good book, and a plate of hot bhajiya. No plans, no alarms.",
+        "icon": "menu_book",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎧 What's the last song you played on repeat?",
+      "🌊 Best spot for sunset on Marine Drive?"
+    ]
+  },
+  {
+    "id": "kavya",
+    "name": "Kavya",
+    "age": 26,
+    "location": "Bengaluru, India",
+    "distance": "12.3 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Product designer by day, filter coffee snob by night. Weekend trekker. ☕🥾",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/7.jpg",
+      "https://randomuser.me/api/portraits/women/8.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Design",
+        "icon": "📐",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Coffee",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Trekking",
+        "icon": "🥾",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love Nandi Hills at sunrise!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "My controversial opinion 🔥",
+        "answer": "Filter coffee beats every fancy latte. Fight me (politely).",
+        "icon": "local_cafe",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "☕ Which cafe in Bengaluru has the best filter coffee?",
+      "🥾 Favourite trek near the city?"
+    ]
+  },
+  {
+    "id": "ishita",
+    "name": "Ishita",
+    "age": 25,
+    "location": "New Delhi, India",
+    "distance": "12.3 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Dilli girl who knows every chaat gali. Bookworm with a Kindle and a tote bag problem. 📚🥟",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/9.jpg",
+      "https://randomuser.me/api/portraits/women/10.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Books",
+        "icon": "📚",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both have read Murakami more than once!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "The way to my heart 💛",
+        "answer": "Bring me golgappe from Bengali Market and I'm yours.",
+        "icon": "restaurant",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "📚 What's the best book you've read this year?",
+      "🥟 Best chaat in Delhi, settle this for me!"
+    ]
+  },
+  {
+    "id": "riya",
+    "name": "Riya",
+    "age": 23,
+    "location": "Pune, India",
+    "distance": "1.2 km away",
+    "status": "Verified",
+    "activeNow": false,
+    "bio": "Bharatanatyam dancer, Sunday baker, serial plant mom. 🌿💃",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/11.jpg",
+      "https://randomuser.me/api/portraits/women/12.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Dance",
+        "icon": "💃",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Cooking",
+        "icon": "🍳",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both think monsoon in Pune is unbeatable!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Currently obsessed with 🎶",
+        "answer": "Learning a new tillana and trying to bake the perfect sourdough.",
+        "icon": "music_note",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "💃 How long have you been dancing?",
+      "🍞 Sweet or savoury bakes?"
+    ]
+  },
+  {
+    "id": "tanvi",
+    "name": "Tanvi",
+    "age": 27,
+    "location": "Ahmedabad, India",
+    "distance": "15.0 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Heritage walk guide who talks too much about pols and havelis. Dhokla evangelist. 🏛️",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/13.jpg",
+      "https://randomuser.me/api/portraits/women/14.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love the Manek Chowk night food market!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "A non-negotiable? 🌙",
+        "answer": "Late night walks through old Ahmedabad with a fafda-jalebi stop.",
+        "icon": "nightlife",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏛️ Favourite hidden corner of the old city?",
+      "📸 Do you shoot film or digital?"
+    ]
+  },
+  {
+    "id": "aditi",
+    "name": "Aditi",
+    "age": 24,
+    "location": "Hyderabad, India",
+    "distance": "15.0 km away",
+    "status": "Recently joined",
+    "activeNow": false,
+    "bio": "Biryani loyalist, K-drama binger and amateur potter. 🍛🏺",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/15.jpg",
+      "https://randomuser.me/api/portraits/women/16.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Movies",
+        "icon": "🎬",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both rate Paradise biryani over everything else!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Hot take 🔥",
+        "answer": "Hyderabadi biryani is a personality, not just a dish.",
+        "icon": "ramen_dining",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🍛 Which biryani spot is your go-to?",
+      "🏺 What's the strangest thing you've made on the wheel?"
+    ]
+  },
+  {
+    "id": "sanya",
+    "name": "Sanya",
+    "age": 25,
+    "location": "Chandigarh, India",
+    "distance": "3.1 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Marathon runner chasing sunrises at Sukhna Lake. Smoothie bowls over everything. 🏃‍♀️🥭",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/17.jpg",
+      "https://randomuser.me/api/portraits/women/18.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Fitness",
+        "icon": "💪",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Yoga",
+        "icon": "🧘",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both wake up before 6 am on weekends!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "My morning ritual 🌅",
+        "answer": "Lake run, stretch, then a stupidly large parantha. Balance.",
+        "icon": "directions_run",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏃‍♀️ Half marathon or full next?",
+      "🥭 Best post-run breakfast?"
+    ]
+  },
+  {
+    "id": "nandini",
+    "name": "Nandini",
+    "age": 28,
+    "location": "Kolkata, India",
+    "distance": "2.4 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Poetry nights, Satyajit Ray marathons and mishti doi without apology. 🎞️",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/19.jpg",
+      "https://randomuser.me/api/portraits/women/20.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Poetry",
+        "icon": "✍️",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Movies",
+        "icon": "🎬",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Books",
+        "icon": "📚",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both can quote Feluda stories!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Favourite film? 🎬",
+        "answer": "Charulata. Every frame feels like a painting.",
+        "icon": "movie",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎞️ Ray, Ghatak or Sen?",
+      "✍️ Do you write too?"
+    ]
+  },
+  {
+    "id": "pooja",
+    "name": "Pooja",
+    "age": 26,
+    "location": "Lucknow, India",
+    "distance": "2.4 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Kathak student with strong tehzeeb opinions. Tunday kebab is my love language. 🌹",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/21.jpg",
+      "https://randomuser.me/api/portraits/women/22.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Dance",
+        "icon": "💃",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Poetry",
+        "icon": "✍️",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both can recite a few Mirza Ghalib couplets!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Currently learning 💫",
+        "answer": "New taal in Kathak and how to make the perfect galouti.",
+        "icon": "self_improvement",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "💃 Kathak or Bollywood on the dance floor?",
+      "🌹 Favourite Urdu poet?"
+    ]
+  },
+  {
+    "id": "divya",
+    "name": "Divya",
+    "age": 25,
+    "location": "Chennai, India",
+    "distance": "5.2 km away",
+    "status": "Recently joined",
+    "activeNow": false,
+    "bio": "Carnatic music nerd with a filter kaapi addiction. Beach evenings forever. 🎶🌊",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/23.jpg",
+      "https://randomuser.me/api/portraits/women/24.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Coffee",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both think Marina Beach beats any rooftop!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Perfect evening? 🌆",
+        "answer": "Sundal at the beach and a kutcheri after.",
+        "icon": "music_note",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎶 Favourite raga to unwind to?",
+      "☕ Filter kaapi or tea, no escape!"
+    ]
+  },
+  {
+    "id": "neha",
+    "name": "Neha",
+    "age": 27,
+    "location": "Udaipur, India",
+    "distance": "15.0 km away",
+    "status": "Verified",
+    "activeNow": false,
+    "bio": "Miniature painter living by the lake. Sunset boat rides over club nights. 🎨🛶",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/25.jpg",
+      "https://randomuser.me/api/portraits/women/26.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Chai",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both love the Pichola ghats at golden hour!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "A non-negotiable? 🌅",
+        "answer": "Chai on a ghat while the city lights come on.",
+        "icon": "wb_twilight",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎨 What are you painting right now?",
+      "🛶 Best sunset spot in Udaipur?"
+    ]
+  },
+  {
+    "id": "simran",
+    "name": "Simran",
+    "age": 24,
+    "location": "Amritsar, India",
+    "distance": "5.2 km away",
+    "status": "New here",
+    "activeNow": false,
+    "bio": "Punjabi pop fan, lassi connoisseur, and a champion of long road trips. 🚗🥛",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/27.jpg",
+      "https://randomuser.me/api/portraits/women/28.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both have Spiti on your road trip list!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Dream trip? 🏔️",
+        "answer": "Amritsar to Spiti with a playlist that makes everyone sing.",
+        "icon": "landscape",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🚗 Dream road trip route?",
+      "🥛 Sweet lassi or salted?"
+    ]
+  },
+  {
+    "id": "aarushi",
+    "name": "Aarushi",
+    "age": 26,
+    "location": "Surat, India",
+    "distance": "3.1 km away",
+    "status": "Verified",
+    "activeNow": false,
+    "bio": "Fashion student, textile nerd, and street food explorer. Diamonds are not my thing, sarees are. 👗",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/29.jpg",
+      "https://randomuser.me/api/portraits/women/30.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Fashion",
+        "icon": "👗",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Design",
+        "icon": "📐",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love thrifting in Surat's old markets!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "My style ✨",
+        "answer": "Handloom drapes with sneakers, always.",
+        "icon": "checkroom",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "👗 What's your favourite saree weave?",
+      "🍢 Best locho in town?"
+    ]
+  },
+  {
+    "id": "shreya",
+    "name": "Shreya",
+    "age": 25,
+    "location": "Goa, India",
+    "distance": "4.6 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Surf instructor and freelance illustrator. Beach shacks by day, sketchbooks by night. 🏄‍♀️🎨",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/31.jpg",
+      "https://randomuser.me/api/portraits/women/32.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Fitness",
+        "icon": "💪",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both prefer south Goa over the crowded north!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Perfect day? 🌴",
+        "answer": "Morning surf, afternoon sketching, evening feni-free sunset.",
+        "icon": "surfing",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏄‍♀️ Teach me to surf?",
+      "🎨 Do you sell your illustrations?"
+    ]
+  },
+  {
+    "id": "priyanka",
+    "name": "Priyanka",
+    "age": 27,
+    "location": "Indore, India",
+    "distance": "4.6 km away",
+    "status": "Popular this week",
+    "activeNow": false,
+    "bio": "Poha-jalebi for breakfast, sarafa bazaar at midnight. Stand-up comedy fan. 😂",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/33.jpg",
+      "https://randomuser.me/api/portraits/women/34.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Theatre",
+        "icon": "🎭",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Movies",
+        "icon": "🎬",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both love the Sarafa night market!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "My weakness 🍧",
+        "answer": "Garadu and anything fried. Calories are a myth.",
+        "icon": "ramen_dining",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "😂 Favourite stand-up comedian?",
+      "🍽️ Sarafa or 56 Dukan?"
+    ]
+  },
+  {
+    "id": "mehak",
+    "name": "Mehak",
+    "age": 23,
+    "location": "Jaipur, India",
+    "distance": "2.4 km away",
+    "status": "Active this week",
+    "activeNow": false,
+    "bio": "Blue pottery lover, Instagram-averse photographer. Evenings at Nahargarh. 📸",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/35.jpg",
+      "https://randomuser.me/api/portraits/women/36.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Chai",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both prefer Nahargarh over Amer Fort!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Golden rule 📌",
+        "answer": "No phones during chai. Conversations only.",
+        "icon": "local_cafe",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "📸 Camera or phone?",
+      "☕ Best chai spot in Jaipur?"
+    ]
+  },
+  {
+    "id": "lakshmi",
+    "name": "Lakshmi",
+    "age": 26,
+    "location": "Kochi, India",
+    "distance": "1.2 km away",
+    "status": "Popular this week",
+    "activeNow": false,
+    "bio": "Backwater kayaker, Malayalam cinema buff and appam-stew devotee. 🛶",
+    "photos": [
+      "https://randomuser.me/api/portraits/women/37.jpg",
+      "https://randomuser.me/api/portraits/women/38.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Movies",
+        "icon": "🎬",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Cooking",
+        "icon": "🍳",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both rewatched Kumbalangi Nights recently!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Favourite film? 🎬",
+        "answer": "Premam. Nostalgia in every frame.",
+        "icon": "movie",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎬 Best Malayalam film you've seen?",
+      "🛶 Kayaking or houseboat?"
+    ]
+  },
+  {
+    "id": "arjun",
+    "name": "Arjun",
+    "age": 27,
+    "location": "New Delhi, India",
+    "distance": "5.2 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Lawyer who plays guitar in a band on weekends. Hauz Khas regular. 🎸",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/5.jpg",
+      "https://randomuser.me/api/portraits/men/6.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Books",
+        "icon": "📚",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Coffee",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both love live gigs at small venues!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Currently playing 🎸",
+        "answer": "Learning Prateek Kuhad covers and trying to write my own songs.",
+        "icon": "music_note",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎸 Which band should I check out?",
+      "☕ Favourite cafe in Hauz Khas?"
+    ]
+  },
+  {
+    "id": "rohan",
+    "name": "Rohan",
+    "age": 26,
+    "location": "Mumbai, India",
+    "distance": "1.2 km away",
+    "status": "Recently joined",
+    "activeNow": false,
+    "bio": "Startup guy, local train survivor, Sunday cricket on the maidan. 🏏",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/7.jpg",
+      "https://randomuser.me/api/portraits/men/8.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Cricket",
+        "icon": "🏏",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Coding",
+        "icon": "💻",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both root for Mumbai Indians!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Perfect Sunday? 🏏",
+        "answer": "Cricket on the maidan then misal pav.",
+        "icon": "sports_cricket",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏏 Batter or bowler?",
+      "🍛 Best misal in Mumbai?"
+    ]
+  },
+  {
+    "id": "kabir",
+    "name": "Kabir",
+    "age": 28,
+    "location": "Bengaluru, India",
+    "distance": "1.2 km away",
+    "status": "Recently joined",
+    "activeNow": false,
+    "bio": "Backend engineer, brewery explorer and weekend cyclist. 🚴",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/9.jpg",
+      "https://randomuser.me/api/portraits/men/10.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Coding",
+        "icon": "💻",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Cycling",
+        "icon": "🚴",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Coffee",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both cycle the Nandi Hills route!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "My morning ritual 🌄",
+        "answer": "Strong coffee, 40 km ride, then breakfast at a dosa joint.",
+        "icon": "directions_bike",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🚴 Longest ride you've done?",
+      "☕ Dosa or idli?"
+    ]
+  },
+  {
+    "id": "vihaan",
+    "name": "Vihaan",
+    "age": 25,
+    "location": "Pune, India",
+    "distance": "9.5 km away",
+    "status": "Active this week",
+    "activeNow": false,
+    "bio": "Photographer shooting streets and old wadas. Misal pav critic. 📷",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/11.jpg",
+      "https://randomuser.me/api/portraits/men/12.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love Shaniwar Wada at dusk!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "A non-negotiable? 📷",
+        "answer": "Always carry a camera, even to buy vegetables.",
+        "icon": "photo_camera",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "📷 Which lens is your favourite?",
+      "🍛 Best misal in Pune?"
+    ]
+  },
+  {
+    "id": "aditya",
+    "name": "Aditya",
+    "age": 27,
+    "location": "Hyderabad, India",
+    "distance": "9.5 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Game dev, anime fan and weekend biryani enthusiast. 🎮",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/13.jpg",
+      "https://randomuser.me/api/portraits/men/14.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Gaming",
+        "icon": "🎮",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Coding",
+        "icon": "💻",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Movies",
+        "icon": "🎬",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both finished Elden Ring!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Currently obsessed with 🎮",
+        "answer": "Building an indie game about a Charminar-themed puzzle world.",
+        "icon": "sports_esports",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎮 Favourite game of all time?",
+      "🍛 Irani chai or biryani first?"
+    ]
+  },
+  {
+    "id": "karan",
+    "name": "Karan",
+    "age": 24,
+    "location": "Chandigarh, India",
+    "distance": "0.8 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Basketball, bikes and bhangra. Weekend trips to Kasol. 🏍️",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/15.jpg",
+      "https://randomuser.me/api/portraits/men/16.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Fitness",
+        "icon": "💪",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both love a Chandigarh to Manali ride!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Dream trip? 🏔️",
+        "answer": "Bike trip through Spiti in summer.",
+        "icon": "landscape",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏍️ Bike or car for trips?",
+      "🏀 Do you play ball?"
+    ]
+  },
+  {
+    "id": "siddharth",
+    "name": "Siddharth",
+    "age": 29,
+    "location": "Kolkata, India",
+    "distance": "3.1 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Film school grad, adda enthusiast, and a Sunday football loyalist. ⚽",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/17.jpg",
+      "https://randomuser.me/api/portraits/men/18.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Movies",
+        "icon": "🎬",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Books",
+        "icon": "📚",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Poetry",
+        "icon": "✍️",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both love College Street bookstores!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Favourite film? 🎞️",
+        "answer": "Pather Panchali. I cry every time.",
+        "icon": "movie",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎞️ Which Ray film should I start with?",
+      "📚 Favourite book at College Street?"
+    ]
+  },
+  {
+    "id": "rahul",
+    "name": "Rahul",
+    "age": 26,
+    "location": "Lucknow, India",
+    "distance": "9.5 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Civil services aspirant with a soft spot for kebabs and ghazals. 🎶",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/19.jpg",
+      "https://randomuser.me/api/portraits/men/20.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Books",
+        "icon": "📚",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love Begum Akhtar's ghazals!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "My weakness 🍢",
+        "answer": "Tunday kebab. Don't talk to me until I finish.",
+        "icon": "restaurant",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🍢 Best kebab spot in Lucknow?",
+      "🎶 Favourite ghazal singer?"
+    ]
+  },
+  {
+    "id": "varun",
+    "name": "Varun",
+    "age": 28,
+    "location": "Chennai, India",
+    "distance": "7.8 km away",
+    "status": "Popular this week",
+    "activeNow": false,
+    "bio": "Mechanical engineer, Carnatic fusion drummer and a filter kaapi addict. 🥁",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/21.jpg",
+      "https://randomuser.me/api/portraits/men/22.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Cricket",
+        "icon": "🏏",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Coffee",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both support CSK no matter what!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Currently playing 🥁",
+        "answer": "A fusion piece mixing mridangam with electronic beats.",
+        "icon": "music_note",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🥁 Favourite percussion instrument?",
+      "🏏 CSK or RCB, choose wisely!"
+    ]
+  },
+  {
+    "id": "dev",
+    "name": "Dev",
+    "age": 25,
+    "location": "Ahmedabad, India",
+    "distance": "7.8 km away",
+    "status": "Verified",
+    "activeNow": false,
+    "bio": "Architect who sketches old city facades. Navratri garba all night. 🏛️",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/23.jpg",
+      "https://randomuser.me/api/portraits/men/24.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Design",
+        "icon": "📐",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Dance",
+        "icon": "💃",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Art",
+        "icon": "🎨",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both love the Sabarmati Riverfront at night!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "A non-negotiable? 🌙",
+        "answer": "Garba during Navratri, no excuses.",
+        "icon": "nightlife",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏛️ Favourite building in Ahmedabad?",
+      "💃 Garba or dandiya?"
+    ]
+  },
+  {
+    "id": "ishaan",
+    "name": "Ishaan",
+    "age": 27,
+    "location": "Jaipur, India",
+    "distance": "3.1 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Heritage hotel manager, polo fan and chai philosopher. ☕",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/25.jpg",
+      "https://randomuser.me/api/portraits/men/26.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Chai",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      }
+    ],
+    "secretHint": "You both love chai at Chokhi Dhani!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Perfect evening? 🌇",
+        "answer": "Rooftop chai watching the Hawa Mahal glow.",
+        "icon": "wb_twilight",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "☕ Masala chai or plain?",
+      "📸 Best rooftop spot in Jaipur?"
+    ]
+  },
+  {
+    "id": "aryan",
+    "name": "Aryan",
+    "age": 24,
+    "location": "Surat, India",
+    "distance": "4.6 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Textile entrepreneur, gym rat and gaming nerd. Ghari is life. 🍬",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/27.jpg",
+      "https://randomuser.me/api/portraits/men/28.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Fitness",
+        "icon": "💪",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Gaming",
+        "icon": "🎮",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love Surat's street food scene!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "My weakness 🍬",
+        "answer": "Surati ghari during Chandni Padva. Always.",
+        "icon": "ramen_dining",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "💪 What's your gym split?",
+      "🎮 Favourite multiplayer game?"
+    ]
+  },
+  {
+    "id": "nikhil",
+    "name": "Nikhil",
+    "age": 26,
+    "location": "Bhopal, India",
+    "distance": "15.0 km away",
+    "status": "Popular this week",
+    "activeNow": false,
+    "bio": "Lakeside cyclist, poetry reader and amateur chef. 🌅",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/29.jpg",
+      "https://randomuser.me/api/portraits/men/30.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Cycling",
+        "icon": "🚴",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Poetry",
+        "icon": "✍️",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Cooking",
+        "icon": "🍳",
+        "bg": "bg-[#FFE0D0]"
+      }
+    ],
+    "secretHint": "You both love Upper Lake evenings!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Perfect Sunday? 🚲",
+        "answer": "Morning ride around the lake and cooking poha for friends.",
+        "icon": "directions_bike",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🚲 Favourite cycling route?",
+      "✍️ Favourite poet?"
+    ]
+  },
+  {
+    "id": "harsh",
+    "name": "Harsh",
+    "age": 25,
+    "location": "Vadodara, India",
+    "distance": "12.3 km away",
+    "status": "Popular this week",
+    "activeNow": false,
+    "bio": "Garba lover, football player and a proud foodie. 🍲",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/31.jpg",
+      "https://randomuser.me/api/portraits/men/32.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Dance",
+        "icon": "💃",
+        "bg": "bg-[#FFE0D0]"
+      },
+      {
+        "label": "Fitness",
+        "icon": "💪",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Foodie",
+        "icon": "🍜",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love sev usal!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "My morning ritual ⚽",
+        "answer": "Football at dawn followed by lilo chevdo and chai.",
+        "icon": "sports_soccer",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "⚽ Favourite football club?",
+      "🍲 Best sev usal in town?"
+    ]
+  },
+  {
+    "id": "yash",
+    "name": "Yash",
+    "age": 27,
+    "location": "Nagpur, India",
+    "distance": "12.3 km away",
+    "status": "Active now",
+    "activeNow": true,
+    "bio": "Wildlife photographer, tiger safari addict and orange lover. 🐯",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/33.jpg",
+      "https://randomuser.me/api/portraits/men/34.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Trekking",
+        "icon": "🥾",
+        "bg": "bg-[#FFF3C4]"
+      }
+    ],
+    "secretHint": "You both love Tadoba National Park!",
+    "mutualCircle": false,
+    "prompts": [
+      {
+        "question": "Dream trip? 🐯",
+        "answer": "Spotting a tiger early morning in Tadoba.",
+        "icon": "landscape",
+        "bg": "bg-primary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🐯 Best wildlife sighting?",
+      "📷 Which lens do you use?"
+    ]
+  },
+  {
+    "id": "manav",
+    "name": "Manav",
+    "age": 28,
+    "location": "Dehradun, India",
+    "distance": "9.5 km away",
+    "status": "New here",
+    "activeNow": false,
+    "bio": "Mountain guide, chai-on-a-peak person and a sunrise chaser. 🏔️",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/35.jpg",
+      "https://randomuser.me/api/portraits/men/36.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Trekking",
+        "icon": "🥾",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Photography",
+        "icon": "📷",
+        "bg": "bg-[#D8F3E4]"
+      },
+      {
+        "label": "Chai",
+        "icon": "☕",
+        "bg": "bg-[#E8E0FF]"
+      }
+    ],
+    "secretHint": "You both love Kedarkantha winter treks!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "A non-negotiable? 🏔️",
+        "answer": "Starting a trek in the dark and reaching the summit by sunrise.",
+        "icon": "landscape",
+        "bg": "bg-tertiary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🏔️ Favourite trek?",
+      "☕ Chai at the summit?"
+    ]
+  },
+  {
+    "id": "tejas",
+    "name": "Tejas",
+    "age": 26,
+    "location": "Goa, India",
+    "distance": "9.5 km away",
+    "status": "Verified",
+    "activeNow": false,
+    "bio": "Musician playing sunset sets at shacks. Susegad over hustle. 🌴🎷",
+    "photos": [
+      "https://randomuser.me/api/portraits/men/37.jpg",
+      "https://randomuser.me/api/portraits/men/38.jpg"
+    ],
+    "interests": [
+      {
+        "label": "Music",
+        "icon": "🎵",
+        "bg": "bg-[#E8E0FF]"
+      },
+      {
+        "label": "Travel",
+        "icon": "✈️",
+        "bg": "bg-[#FFF3C4]"
+      },
+      {
+        "label": "Cycling",
+        "icon": "🚴",
+        "bg": "bg-[#D8F3E4]"
+      }
+    ],
+    "secretHint": "You both love Palolem at sunset!",
+    "mutualCircle": true,
+    "prompts": [
+      {
+        "question": "Currently playing 🎷",
+        "answer": "Smooth jazz covers with a Konkani twist.",
+        "icon": "music_note",
+        "bg": "bg-secondary-fixed"
+      }
+    ],
+    "icebreakers": [
+      "🎷 Play me your favourite song?",
+      "🌴 Palolem or Agonda?"
+    ]
+  }
+]

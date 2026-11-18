@@ -4,8 +4,7 @@ export default function DiscoverProfileDetails({
   profile,
   onBack,
   onLike,
-  onPass,
-  onTriggerMatch
+  onPass
 }) {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [revealedHint, setRevealedHint] = useState(false);
@@ -44,8 +43,7 @@ export default function DiscoverProfileDetails({
   const handleSendLike = () => {
     setToast({
       title: "Like Sent! ❤️",
-      desc: `If ${profile.name} likes your Coy profile back, it's an instant reveal!`,
-      isMatchOpportunity: true
+      desc: `If ${profile.name} likes you back, you’ll see each other in Matches.`
     });
     onLike && onLike(profile);
   };
@@ -53,11 +51,6 @@ export default function DiscoverProfileDetails({
   const handleKeepExploring = () => {
     setToast(null);
     onBack && onBack();
-  };
-
-  const handleSimulateMatch = () => {
-    setToast(null);
-    onTriggerMatch && onTriggerMatch(profile);
   };
 
   return (
@@ -253,7 +246,7 @@ export default function DiscoverProfileDetails({
           <button 
             type="button"
             aria-label="Pass"
-            onClick={onPass}
+            onClick={() => onPass && onPass(profile)}
             className="w-13 h-13 min-w-[52px] min-h-[52px] rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-[2px_2px_0px_#1e1a24] border border-[#1e1a24] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer"
           >
             <span className="material-symbols-outlined text-[26px]">close</span>
@@ -298,16 +291,6 @@ export default function DiscoverProfileDetails({
             </p>
 
             <div className="flex flex-col gap-2 w-full mt-2">
-              {toast.isMatchOpportunity && (
-                <button 
-                  type="button"
-                  onClick={handleSimulateMatch}
-                  className="w-full py-3 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-[3px_3px_0px_#1e1a24] border-2 border-[#1e1a24] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer flex items-center justify-center gap-1.5"
-                >
-                  <span>See Match Screen! 🔥</span>
-                </button>
-              )}
-
               <button 
                 type="button"
                 onClick={handleKeepExploring}
