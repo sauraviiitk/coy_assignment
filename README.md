@@ -2,7 +2,7 @@
 
 Coy Discover is a mobile-first profile discovery app built around a swipe-and-match experience. Browse one profile at a time, view profile details, and see a match when two people have liked each other.
 
-> **Video demonstration:** Add your video link here.
+> **Video demonstration:** [  video link .](https://drive.google.com/file/d/1E6F56WZEejZucgbahPT1R11yNwo0mpTV/view?usp=sharing)
 
 ## Features
 
